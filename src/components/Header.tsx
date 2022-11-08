@@ -13,8 +13,9 @@ const Header: FC<HeaderProps> = ({}) => {
             <Planet size={35} className="ml-10 cursor-pointer text-[#f2f2f2] hover:text-[#FF4A70] transition-colors" />
           </a>
           <div className="text-zinc-100 text-[20px] flex gap-4">
-            <a href="" className="hover:underline m-[14px]">Projetos</a>
+            <a href="#projetos" className="hover:underline m-[14px]">Projetos</a>
             <a href="" className="hover:underline m-[14px]">Sobre Mim</a>
+            <a href="" className="hover:underline m-[14px]">O que eu Faço?</a>
             <a href="" className="hover:underline m-[14px]">Contato</a>
           </div>
         </div>

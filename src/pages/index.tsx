@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ContactGadget from "../components/ContactGadget";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import LandingHome from "../components/LandingHome";
 import Projects from "../components/Projects";
@@ -31,6 +32,7 @@ export default function Home() {
           <SlidingCarousel />
           <ContactGadget />
           <Projects />
+          <Footer />
         </div>
       )}
     </div>

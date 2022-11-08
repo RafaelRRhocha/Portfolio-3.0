@@ -1,4 +1,3 @@
-import { ArrowRight } from 'phosphor-react';
 import type { FC } from 'react';
 
 interface LandingHomeProps {}
@@ -16,10 +15,6 @@ const LandingHome: FC<LandingHomeProps> = ({}) => {
             <span className="text-[#FF4A70]"> Front End</span> <br />
             Simples, Objetivo e Moderno
           </strong>
-          <div className="flex gap-2 items-center">
-            <a href="" className="underline text-[20px] font-semibold">Entre em contato</a>
-            <ArrowRight size={25} color="#fffafa" />
-          </div>
         </div>
         <div>
           <div className="spinner-box">
