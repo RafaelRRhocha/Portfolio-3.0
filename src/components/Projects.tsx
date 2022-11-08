@@ -20,17 +20,11 @@ const Projects: FC<ProjectsProps> = ({}) => {
       </div>
 
       <div className="flex justify-center items-center border-b-[0.5px] border-solid border-white">
-        <div className="flex flex-col justify-center items-center gap-7 w-1/2 h-[500px] text-zinc-100 bg-black">
-          <h1 className="text-[45px] font-semibold tracking-wide">Projetos</h1>
-          <p className="text-[25px] font-medium tracking-wide">
-            Conheça Alguns dos meus Projetos!
-          </p>
+        <div className="flex justify-center items-center gap-7 w-1/2 h-[500px] text-zinc-100 bg-[#FE4F30]">
+          <h1 className="text-[45px] font-semibold tracking-wide">Imagem Do Projeto</h1>
         </div>
-        <div className="flex flex-col justify-center items-center gap-7 w-1/2 h-[500px] text-zinc-100 bg-red-500">
-          <h1 className="text-[45px] font-semibold tracking-wide">Projetos</h1>
-          <p className="text-[25px] font-medium tracking-wide">
-            Conheça Alguns dos meus Projetos!
-          </p>
+        <div className="flex justify-center items-center gap-7 w-1/2 h-[500px] text-zinc-100 bg-black">
+          <h1 className="text-[45px] font-semibold tracking-wide">Descrição do Projeto</h1>
         </div>
       </div>
     </div>
