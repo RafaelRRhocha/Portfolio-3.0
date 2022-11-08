@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FF4A70;
+  border-radius: 20px;
+}
+
 .blurBg {
   background-color: rgba(0,0,0,0.4)!important; 
   backdrop-filter: saturate(180%) blur(20px);
