@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.blurBg {
+  background-color: rgba(0,0,0,0.4)!important; 
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  transition: background-color 1s ease !important;
+  font-family: DM Sans, sans-serif;
+}
+
+body {
+  background: rgb(4,1,10);
+  background: linear-gradient(90deg, rgba(4,1,10,1) 0%, rgba(15,4,36,1) 100%);
+}
