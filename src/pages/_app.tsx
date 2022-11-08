@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import '../styles/carousel.css'
+import '../styles/gadget.css'
 import '../styles/globals.css'
 import '../styles/main.css'
 import '../styles/planet.css'
