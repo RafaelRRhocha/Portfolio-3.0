@@ -5,6 +5,7 @@ import '../styles/gadget.css'
 import '../styles/globals.css'
 import '../styles/main.css'
 import '../styles/planet.css'
+import '../styles/projects.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

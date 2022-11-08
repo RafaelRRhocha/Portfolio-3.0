@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ContactGadget from "../components/ContactGadget";
 import Header from "../components/Header";
 import LandingHome from "../components/LandingHome";
+import Projects from "../components/Projects";
 import SlidingCarousel from "../components/SlidingCarousel";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
           <LandingHome />
           <SlidingCarousel />
           <ContactGadget />
+          <Projects />
         </div>
       )}
     </div>

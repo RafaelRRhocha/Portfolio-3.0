@@ -17,7 +17,7 @@ const LandingHome: FC<LandingHomeProps> = ({}) => {
             Simples, Objetivo e Moderno
           </strong>
           <div className="flex gap-2 items-center">
-            <a href="" className="underline text-[20px]">Entre em contato</a>
+            <a href="" className="underline text-[20px] font-semibold">Entre em contato</a>
             <ArrowRight size={25} color="#fffafa" />
           </div>
         </div>
