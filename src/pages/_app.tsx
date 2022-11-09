@@ -6,6 +6,7 @@ import '../styles/globals.css'
 import '../styles/main.css'
 import '../styles/planet.css'
 import '../styles/projects.css'
+import '../styles/whatIDo.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

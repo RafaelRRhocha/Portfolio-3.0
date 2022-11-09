@@ -1,4 +1,4 @@
-import { ArrowSquareOut } from 'phosphor-react';
+import { ArrowSquareOut, ArrowUpRight } from 'phosphor-react';
 import type { FC } from 'react';
 import { useEffect, useState } from 'react';
 
@@ -34,7 +34,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
           <div key={ e.name } className="flex justify-center items-center border-b-[0.5px] border-solid border-white">
             <div className="flex justify-center items-center gap-7 w-1/2 h-[500px] text-zinc-100 bg-[#FE4F30]">
               <picture className="flex items-center w-full h-full">
-                <img src="https://user-images.githubusercontent.com/99758843/200694482-3d8d5c5e-2216-4bf3-8112-c42aa9ad4b43.png" alt="" />
+                <img src="https://user-images.githubusercontent.com/99758843/200838978-82117f3e-cdce-4c05-8c2f-a04516256aeb.png" alt="" />
               </picture>
             </div>
             <div className="flex flex-col justify-center items-center gap-7 w-1/2 h-[500px] text-zinc-100 bg-black">
@@ -46,15 +46,19 @@ const Projects: FC<ProjectsProps> = ({}) => {
               </div>
               <div className="flex flex-col justify-center items-center gap-5">
                 <p>{ e.stacks }</p>
-                <div className="flex gap-2 justify-center items-center underline">
+                <div className="flex gap-2 justify-center items-center underline text-[#ff0c8f]">
                   <a href={ e.ref } target="_blank" rel="noreferrer">{`${e.name.split(" ").join("").toLowerCase().trim()}.com`}</a>
-                  <ArrowSquareOut size={23} color="#f2f2f2" />
+                  <ArrowSquareOut size={23} />
                 </div>
               </div>
             </div>
           </div>
         ))
       )}
+      <div className="h-[150px] font-semibold tracking-wide text-zinc-100 border-b-[0.5px] border-solid border-white bg-[#ff0c8f] flex justify-center items-center gap-2 w-full">
+        <p className="text-[25px]">Gostaria de ver mais projetos? Clique <a href="rafaelrocha-projetos.vercel.app" target="_blank" rel="noreferrer" className="text-black underline">Aqui</a></p>
+        <ArrowUpRight size={32} color="#000" />
+      </div>
     </div>
   );
 }
