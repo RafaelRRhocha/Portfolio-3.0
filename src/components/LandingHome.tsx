@@ -5,10 +5,10 @@ interface LandingHomeProps {}
 const LandingHome: FC<LandingHomeProps> = ({}) => {
   return (
     <>
-      <div id="home" className="p-[180px] flex justify-center items-center gap-10 border-b-[0.5px] border-solid border-white">
+      <div id="home" className="p-[180px] flex justify-center items-center gap-[50px] border-b-[0.5px] border-solid border-white">
         <div className="flex flex-col items-left gap-10 text-zinc-100">
           <p className="text-[20px] font-semibold tracking-wide">
-            Olá, eu me chamo Rafael Rocha  👋
+            Olá! Eu me chamo Rafael Rocha, e no momento estou buscando emprego 👋
           </p>
           <strong className="text-[52px]">
             Desenvolvedor
