@@ -56,7 +56,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
         ))
       )}
       <div className="h-[150px] font-semibold tracking-wide text-zinc-100 border-b-[0.5px] border-solid border-white bg-[#ff0c8f] flex justify-center items-center gap-2 w-full">
-        <p className="text-[25px]">Gostaria de ver mais projetos? Clique <a href="rafaelrocha-projetos.vercel.app" target="_blank" rel="noreferrer" className="text-black underline">Aqui</a></p>
+        <p className="text-[25px]">Gostaria de ver mais projetos? Clique <a href="https://projetos-portfolio.vercel.app/" target="_blank" rel="noreferrer" className="text-black underline">Aqui</a></p>
         <ArrowUpRight size={32} color="#000" />
       </div>
     </div>
