@@ -32,9 +32,9 @@ const Projects: FC<ProjectsProps> = ({}) => {
       {!projects ? <p>Loading</p> : (
         projects.map((e: any) => (
           <div key={ e.name } className="flex justify-center items-center border-b-[0.5px] border-solid border-white">
-            <div className="flex justify-center items-center gap-7 w-1/2 h-[500px] text-zinc-100 bg-[#FE4F30]">
-              <picture className="flex items-center w-full h-full">
-                <img src="https://user-images.githubusercontent.com/99758843/200838978-82117f3e-cdce-4c05-8c2f-a04516256aeb.png" alt="" />
+            <div className="flex justify-center items-center gap-7 w-1/2 h-[500px] text-zinc-100 bg-[#D44C92]">
+              <picture className="flex justify-center items-center w-full h-full">
+                <h1 className="text-[40px] font-semibold">Imagem do Projeto</h1>
               </picture>
             </div>
             <div className="flex flex-col justify-center items-center gap-7 w-1/2 h-[500px] text-zinc-100 bg-black">

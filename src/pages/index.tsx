@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import AboutMe from "../components/AboutMe";
+import Contact from "../components/Contact";
 import ContactGadget from "../components/ContactGadget";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -33,7 +35,9 @@ export default function Home() {
           <SlidingCarousel />
           <ContactGadget />
           <Projects />
+          <AboutMe />
           <WhatIDo />
+          <Contact />
           <Footer />
         </div>
       )}
