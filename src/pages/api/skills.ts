@@ -12,11 +12,6 @@ export default function myskills(
       ref: 'https://git-scm.com/'
     },
     {
-      name: 'GitHub',
-      image: 'https://user-images.githubusercontent.com/99758843/184500877-1d2935b3-91d2-4fc5-baee-cdf9bbf7703b.svg',
-      ref: 'https://github.com/'
-    },
-    {
       name: 'Html',
       image: 'https://user-images.githubusercontent.com/99758843/178770615-f16772a0-20ab-49bd-9518-3c0b54fa06e3.svg',
       ref: 'https://developer.mozilla.org/pt-BR/docs/Web/HTML'
@@ -41,32 +36,7 @@ export default function myskills(
       image: 'https://user-images.githubusercontent.com/99758843/178770625-43ca658e-63b3-477d-831a-43c8b7ab5d4d.svg',
       ref: 'https://tailwindcss.com/docs/installation'
     },
-    {
-      name: 'Styled Components',
-      image: 'https://user-images.githubusercontent.com/99758843/184499853-66bc9640-f5fc-42cc-a3b8-73384c4d9471.svg',
-      ref: 'https://styled-components.com/'
-    },
-    {
-      name: 'Sass',
-      image: 'https://user-images.githubusercontent.com/99758843/184500163-28347fbe-5938-4f7c-9bf2-b712074c7dd5.svg',
-      ref: 'https://sass-lang.com/'
-    },
-    {
-      name: 'Bootstrap',
-      image: 'https://user-images.githubusercontent.com/99758843/184500119-50905e52-daf5-41cc-b13d-43aaa2822292.svg',
-      ref: 'https://getbootstrap.com/'
-    },
-    {
-      name: 'Jest',
-      image: 'https://user-images.githubusercontent.com/99758843/178770619-48843414-5e90-4405-b81b-2ec96a4d8827.svg',
-      ref: 'https://jestjs.io/pt-BR/docs/getting-started'
-    },
-    {
-      name: 'RTL',
-      image: 'https://user-images.githubusercontent.com/99758843/178770624-d723b893-4f6a-41c8-bdee-99ce79946626.png',
-      ref: 'https://testing-library.com/docs/react-testing-library/intro/'
-    },
-    {
+        {
       name: 'React',
       image: 'https://user-images.githubusercontent.com/99758843/178770622-34ccb59e-527e-4c2d-9e22-2c29946cf3eb.svg',
       ref: 'https://pt-br.reactjs.org/docs/getting-started.html'
@@ -85,6 +55,31 @@ export default function myskills(
       name: 'Vue.js',
       image: 'https://img.icons8.com/color/512/vue-js.png',
       ref: 'https://vuejs.org'
-    }
+    },
+    {
+      name: 'Jest',
+      image: 'https://user-images.githubusercontent.com/99758843/178770619-48843414-5e90-4405-b81b-2ec96a4d8827.svg',
+      ref: 'https://jestjs.io/pt-BR/docs/getting-started'
+    },
+    {
+      name: 'RTL',
+      image: 'https://user-images.githubusercontent.com/99758843/178770624-d723b893-4f6a-41c8-bdee-99ce79946626.png',
+      ref: 'https://testing-library.com/docs/react-testing-library/intro/'
+    },
+    {
+      name: 'Styled Components',
+      image: 'https://user-images.githubusercontent.com/99758843/184499853-66bc9640-f5fc-42cc-a3b8-73384c4d9471.svg',
+      ref: 'https://styled-components.com/'
+    },
+    {
+      name: 'Sass',
+      image: 'https://user-images.githubusercontent.com/99758843/184500163-28347fbe-5938-4f7c-9bf2-b712074c7dd5.svg',
+      ref: 'https://sass-lang.com/'
+    },
+    {
+      name: 'Bootstrap',
+      image: 'https://user-images.githubusercontent.com/99758843/184500119-50905e52-daf5-41cc-b13d-43aaa2822292.svg',
+      ref: 'https://getbootstrap.com/'
+    },
   ])
 }

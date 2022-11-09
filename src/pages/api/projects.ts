@@ -21,7 +21,7 @@ export default function handler(
     {
       image: 'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/344/external-recipes-foodies-flaticons-lineal-color-flat-icons-3.png',
       name: 'App de Receitas',
-      stacks: 'React, Context API, Tailwind, and React Testing Library for Unitary Tests',
+      stacks: 'React, Context API, Tailwind e RTL para testes unitários',
       ref: 'https://recipes-app-rafaelrrhocha.vercel.app/'
     },
     {
@@ -39,7 +39,7 @@ export default function handler(
     {
       image: 'https://user-images.githubusercontent.com/99758843/180787757-108c0f58-e8e4-484d-a495-76b4864b2c57.png',
       name: 'Carteira de Gastos',
-      stacks: 'React, Redux, Sass, and React Testing Library for Unitary Tests',
+      stacks: 'React, Redux, Sass e RTL para testes unitários',
       ref: 'https://carteira-de-gastos-rafaelrrhocha.vercel.app'
     },
     {
@@ -63,19 +63,19 @@ export default function handler(
     {
       image: 'https://user-images.githubusercontent.com/99758843/178772409-140ee5fa-2f94-4421-95ee-d8c3994bd5be.svg',
       name: 'Carrinho de Compras',
-      stacks: 'Html, Css, Js and Jest for Unitary Tests',
+      stacks: 'Html, Css, Js e Jest para testes unitários',
       ref: 'https://rafaelrrhocha.github.io/Projetos/shoppingCart/'
     },
     {
       image: 'https://user-images.githubusercontent.com/99758843/178772388-c24eabdc-f97a-4723-8631-ad7ddfa1a264.svg',
       name: 'SpotSongs',
-      stacks: 'React, Tailwind and Jest for Unitary Tests',
+      stacks: 'React, Tailwind e Jest para testes unitários',
       ref: 'https://preview-songs-rafaelrrhocha.vercel.app'
     },
     {
       image: 'https://user-images.githubusercontent.com/99758843/180788642-925e62b1-d9a6-4a18-b6df-493e0870e13a.png',
       name: 'Jogo de Trivia',
-      stacks: 'React, Redux, Tailwind, and React Testing Library for Unitary Tests',
+      stacks: 'React, Redux, Tailwind e RTL para testes unitários',
       ref: 'https://trivia-rafaelrrhocha.vercel.app'
     },
   ])
