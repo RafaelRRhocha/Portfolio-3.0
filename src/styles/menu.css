@@ -1,0 +1,51 @@
+#menuToggle {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menuToggle input {
+  display: flex;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1;
+}
+
+#menuToggle span{
+  width: 45px;
+  height: 4px;
+  margin-bottom: 10px;
+  background: white;
+  border-radius: 4px;
+  -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -ms-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -o-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  transition: all .5s cubic-bezier(.08,.81,.87,.71);
+}
+
+#span1 {
+  transform-origin: 4px 0px;
+}
+
+#span3 {
+  transform-origin: bottom right;
+}
+
+#menuToggle input:checked ~ #span1 {
+  background-color: whitesmoke;
+  transform: rotate(45deg) translate(8px);
+}
+
+#menuToggle input:checked ~ #span2 {
+  background-color: whitesmoke;
+  transform: rotate(495deg) translate(4px);   
+}
+
+#menuToggle input:checked ~ #span3 {
+  background-color: whitesmoke;
+  transform: rotate(45deg);
+  opacity: 0;
+}

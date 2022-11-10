@@ -6,7 +6,7 @@ const ContactGadget: FC<ContactGadgetProps> = ({}) => {
   return (
     <>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
-      <div className="floating-container">
+      <div className="floating-container z-50">
         <div className="floating-button">+</div>
         <div className="element-container">
 

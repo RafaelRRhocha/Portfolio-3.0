@@ -5,6 +5,7 @@ import ContactGadget from "../components/ContactGadget";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import LandingHome from "../components/LandingHome";
+import MenuHamburger from "../components/MenuHamburger";
 import Projects from "../components/Projects";
 import SlidingCarousel from "../components/SlidingCarousel";
 import WhatIDo from "../components/WhatIDo";
@@ -31,6 +32,7 @@ export default function Home() {
       ) : (
         <div className="flex flex-col">
           <Header />
+          <MenuHamburger />
           <LandingHome />
           <SlidingCarousel />
           <ContactGadget />
