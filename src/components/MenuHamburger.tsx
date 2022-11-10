@@ -19,7 +19,7 @@ const MenuHamburger: FC<MenuHamburgerProps> = ({}) => {
         </div>
       </div>
       {menu && (
-        <div className="flex flex-col text-[40px] transition-all bg-black w-[100vw] h-[100vh] text-zinc-100 justify-center items-center">
+        <div onClick={() => setMenu(!menu)} className="flex md:hidden lg:hidden xl:hidden flex-col text-[40px] transition-all bg-black w-[100vw] h-[100vh] text-zinc-100 justify-center items-center">
             <a href="#projetos" className="underline m-[14px]">Projetos</a>
             <a href="#sobreMim" className="underline m-[14px]">Sobre Mim</a>
             <a href="#contato" className="underline m-[14px]">Contato</a>
