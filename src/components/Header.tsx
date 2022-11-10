@@ -7,7 +7,7 @@ interface HeaderProps {}
 const Header: FC<HeaderProps> = ({}) => {
   return (
     <>
-      <header className="flex justify-between h-[90px] blurBg items-center border-b-[0.5px] border-solid border-white fixed w-full z-[10]">
+      <header className="hidden md:flex lg:flex xl:flex justify-between h-[90px] blurBg items-center border-b-[0.5px] border-solid border-white fixed w-full z-[10]">
         <div className="flex items-center gap-[80px]">
           <a href="#home">
             <Planet size={35} className="ml-10 cursor-pointer text-[#f2f2f2] hover:text-[#FF4A70] transition-colors" />

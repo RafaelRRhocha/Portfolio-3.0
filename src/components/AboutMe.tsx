@@ -4,10 +4,10 @@ interface AboutMeProps {}
 
 const AboutMe: FC<AboutMeProps> = ({}) => {
   return (
-    <div id="sobreMim" className="w-full h-[600px] bg-black flex flex-col justify-center items-center gap-4 text-zinc-100 border-b-[0.5px] border-solid border-white">
+    <div id="sobreMim" className="w-full h-[1200px] md:h-[600px] lg:h-[600px] xl:h-[600px] bg-black flex flex-col justify-center items-center gap-4 text-zinc-100 border-b-[0.5px] border-solid border-white">
       <h1 className="text-[45px] font-semibold tracking-wide">Sobre Mim</h1>
-      <div className="flex gap-6 justify-center items-center text-zinc-100">
-        <div className="max-w-[500px] text-[18px]">
+      <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row gap-6 justify-center items-center text-zinc-100 p-5">
+        <div className="max-w-[500px] text-[18px] text-center md:text-left lg:text-left xl:text-left">
           <p>
             Olá! Me chamo Rafael e tenho 19 anos!
             Sou desenvolvedor front end, tenho mais experiência em ambientes
@@ -24,7 +24,7 @@ const AboutMe: FC<AboutMeProps> = ({}) => {
             e Espirito de Equipe
           </p>
         </div>
-        <div className="max-w-[500px] text-[18px]">
+        <div className="max-w-[500px] text-[18px] text-center md:text-left lg:text-left xl:text-left">
           <p>
             A partir do momento que entrei na trybe consegui ampliar cada vez mais meus conhecimentos
             descobri novas tecnologias que me encantaram logo de cara, paralelo ao front estou estudando

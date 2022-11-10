@@ -18,7 +18,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
       <div className="flex justify-center items-center border-b-[0.5px] border-solid border-white">
         <div className="flex flex-col justify-center items-center gap-7 w-full h-[500px] text-zinc-100 bg-black">
           <h1 className="text-[45px] font-semibold tracking-wide">Projetos</h1>
-          <p className="text-[25px] font-medium tracking-wide">
+          <p className="text-[25px] font-medium tracking-wide text-center">
             Conheça Alguns dos meus Projetos!
           </p>
           <svg className="arrows">
@@ -31,13 +31,13 @@ const Projects: FC<ProjectsProps> = ({}) => {
 
       {!projects ? <p>Loading</p> : (
         projects.map((e: any) => (
-          <div key={ e.name } className="flex justify-center items-center border-b-[0.5px] border-solid border-white">
-            <div className="flex justify-center items-center gap-7 w-1/2 h-[500px] text-zinc-100 bg-black">
+          <div key={ e.name } className="flex flex-col md:flex-row lg:flex-row xl:flex-row justify-center items-center border-b-[0.5px] border-solid border-white">
+            <div className="flex justify-center items-center gap-7 w-full h-full md:w-1/2 md:h-[500px] lg:w-1/2 lg:h-[500px] xl:w-1/2 xl:h-[500px] text-zinc-100 bg-black">
               <picture className="flex justify-center items-center w-full h-full opacity-[0.4]">
                 <img src={ e.projectImage} alt="Imagem do Projeto" className="w-full h-full" />
               </picture>
             </div>
-            <div className="flex flex-col justify-center items-center gap-7 w-1/2 h-[500px] text-zinc-100 bg-black">
+            <div className="flex flex-col justify-center items-center gap-7 w-full h-[400px] md:w-1/2 md:h-[500px] lg:w-1/2 lg:h-[500px] xl:w-1/2 xl:h-[500px] text-zinc-100 bg-black">
               <div className="flex justify-center items-center gap-5">
                 <picture>
                   <img src={ e.image } height="40" width="60" alt="" />
@@ -45,7 +45,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
                 <h1 className="text-[25px] font-semibold tracking-wide">{ e.name }</h1>
               </div>
               <div className="flex flex-col justify-center items-center gap-5">
-                <p>{ e.stacks }</p>
+                <p className="text-center">{ e.stacks }</p>
                 <div className="flex gap-2 justify-center items-center underline text-[#ff0c8f]">
                   <a href={ e.ref } target="_blank" rel="noreferrer">{`${e.name.split(" ").join("").toLowerCase().trim()}.com`}</a>
                   <ArrowSquareOut size={23} />
@@ -55,9 +55,9 @@ const Projects: FC<ProjectsProps> = ({}) => {
           </div>
         ))
       )}
-      <div className="h-[150px] font-semibold tracking-wide text-zinc-100 border-b-[0.5px] border-solid border-white bg-[#ff0c8f] flex justify-center items-center gap-2 w-full">
+      <div className="h-[150px] text-center font-semibold tracking-wide text-zinc-100 border-b-[0.5px] border-solid border-white bg-[#ff0c8f] flex justify-center items-center gap-2 w-full">
         <p className="text-[25px]">Gostaria de ver mais projetos? Clique <a href="https://projetos-portfolio.vercel.app/" target="_blank" rel="noreferrer" className="text-black underline">Aqui</a></p>
-        <ArrowUpRight size={32} color="#000" />
+        <ArrowUpRight size={32} color="#000" className="hidden md:flex lg:flex xl:flex" />
       </div>
     </div>
   );

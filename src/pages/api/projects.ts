@@ -15,7 +15,7 @@ export default function handler(
     },
     {
       image: 'https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/344/external-quiz-online-learning-vitaliy-gorbachev-blue-vitaly-gorbachev.png',
-      name: 'Quiz Conhecimentos Gerais',
+      name: 'Quiz - Racha Cuca',
       stacks: 'Next.Js, TypeScript, Tailwind',
       ref: 'https://quiz-rafaelrrhocha.vercel.app',
       projectImage: 'https://user-images.githubusercontent.com/99758843/200903639-fd7a9099-a71f-45dc-8df3-c2765af055da.jpg',
