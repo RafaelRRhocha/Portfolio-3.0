@@ -4,9 +4,9 @@ interface WhatIDoProps {}
 
 const WhatIDo: FC<WhatIDoProps> = ({}) => {
   return (
-    <div id="whatIDo" className="hidden md:flex lg:flex xl:flex flex-col justify-center p-10 items-center w-full h-[600px] bg-black border-b-[0.5px] border-solid border-white">
-      <h1 className="text-zinc-100 text-[45px] font-semibold tracking-wide">O que eu Faço?</h1>
-      <div className="container">
+    <div id="whatIDo" className="flex flex-col justify-center p-1 md:p-10 lg:p-10 xl:p-10 items-center w-full h-[1000px] md:h-[600px] lg:h-[600px] xl:h-[600px] bg-black border-b-[0.5px] border-solid border-white">
+      <h1 className="text-zinc-100 text-[45px] font-semibold tracking-wide text-center">O que eu Faço?</h1>
+      <div className="container flex flex-col md:flex-row lg:flex-row xl:flex-row justify-center items-center gap-2 md:gap-[80px] lg:gap-[80px] xl:gap-[80px]">
           <div className="card">
               <div className="face face1">
                   <div className="content">
