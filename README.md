@@ -7,23 +7,32 @@
 - [Tailwind Css](https://tailwindcss.com/docs/installation)
 - [Daisy UI](https://daisyui.com)
 - [Eslint](https://eslint.org)
+- [Docker] (https://www.docker.com)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ## Getting Started
 
+```bash
+git clone git@github.com:RafaelRRhocha/Onesight.git
+```
+
+```bash
+cd Onesight
+```
+
 ### Install dependencies:
 
-```bash
-yarn install
-```
-
-or
+#### With Docker:
 
 ```bash
-npm install
+docker build -t <image-name> .
 ```
 
-### Run development server
+```bash
+docker container run --name <container-name> -p 3001:3000 <image-name>
+```
+
+#### Without Docker:
 
 ```bash
 yarn run dev
