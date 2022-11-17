@@ -5,6 +5,7 @@ import ContactGadget from "../components/ContactGadget";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import LandingHome from "../components/LandingHome";
+import Loading from "../components/Loading";
 import MenuHamburger from "../components/MenuHamburger";
 import Projects from "../components/Projects";
 import SlidingCarousel from "../components/SlidingCarousel";
@@ -22,13 +23,7 @@ export default function Home() {
   return (
     <div>
       {!mySkills ? (
-        <picture className="h-full w-full bg-black">
-          <img
-            src="https://user-images.githubusercontent.com/99758843/185761535-b0fe5cf6-49e2-44f8-bd35-64100d247654.gif"
-            alt="loading"
-            className='h-[200px] w-[200px] m-auto mt-[10%]'
-          />
-        </picture>
+        <Loading />
       ) : (
         <div className="flex flex-col">
           <Header />
