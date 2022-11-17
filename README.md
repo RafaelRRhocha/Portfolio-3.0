@@ -7,7 +7,7 @@
 - [Tailwind Css](https://tailwindcss.com/docs/installation)
 - [Daisy UI](https://daisyui.com)
 - [Eslint](https://eslint.org)
-- [Docker] (https://www.docker.com)
+- [Docker](https://www.docker.com)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ## Getting Started
