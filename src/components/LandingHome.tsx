@@ -11,8 +11,8 @@ const LandingHome: FC<LandingHomeProps> = ({}) => {
             Olá! Eu me chamo Rafael Rocha, e no momento estou buscando emprego 👋
           </p>
           <strong className="text-[52px]">
-            Desenvolvedor
-            <span className="text-[#FF4A70]"> Front End</span> <br />
+            Desenvolvedor 
+            <span className="text-[#FF4A70]"> Full Stack</span> <br />
             Simples, Objetivo e Moderno
           </strong>
         </div>
