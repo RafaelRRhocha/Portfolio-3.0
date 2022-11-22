@@ -10,8 +10,8 @@ const AboutMe: FC<AboutMeProps> = ({}) => {
         <div className="max-w-[500px] text-[18px] text-center md:text-left lg:text-left xl:text-left">
           <p>
             Olá! Me chamo Rafael e tenho 19 anos!
-            Sou desenvolvedor front end, tenho mais experiência em ambientes
-            que trabalham com react, porém tenho familiaridade com outros frameworks SPA (angular/vue).
+            Sou desenvolvedor web, tenho mais experiência em ambientes
+            que trabalham com react, porém tenho conhecimento com outros frameworks SPA (angular/vue).
             Tenho contato com programação desde os meus 16 anos onde tive o primeiro contato com C#,
             depois disso fui estudando cada vez mais e fui me aperfeiçoando em conhecimento, tenho bastante
             vontade de aprender coisas novas e uma grande facilidade de adaptação sempre disposto a aprender mais e mais
@@ -27,8 +27,8 @@ const AboutMe: FC<AboutMeProps> = ({}) => {
         <div className="max-w-[500px] text-[18px] text-center md:text-left lg:text-left xl:text-left">
           <p>
             A partir do momento que entrei na trybe consegui ampliar cada vez mais meus conhecimentos
-            descobri novas tecnologias que me encantaram logo de cara, paralelo ao front estou estudando
-            back end também, então tenho familiaridade com docker, sql, node, express, mocha e conceitos
+            descobri novas tecnologias que me encantaram logo de cara, no back end trabalho com
+            docker, sql, noSql node, express, mocha, chai, APIs OO, mongoDB e conceitos
             como POO E SOLID! <br />
             No meu tempo livre gosto de caminhar e fazer trilhas!
             Minha personalidade é INTJ-A
