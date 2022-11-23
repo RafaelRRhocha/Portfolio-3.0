@@ -14,7 +14,7 @@ const Contact: FC<ContactProps> = ({}) => {
           </p>
           <a
             className="bg-[#BCA5AE] text-center rounded-lg p-4 text-black hover:animate-pulse"
-            href="https://drive.google.com/file/d/1Ftl657WNDrtqnIxy3ylmINh1XyTXFwQl/view"
+            href="https://drive.google.com/file/d/1aD-PreoSvR9TFQ2XBY9ith2Nq-KbMTzv/view"
             target='_blank'
             rel='noreferrer'>
             Veja meu Currículo!

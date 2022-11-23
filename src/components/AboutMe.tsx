@@ -28,7 +28,7 @@ const AboutMe: FC<AboutMeProps> = ({}) => {
           <p>
             A partir do momento que entrei na trybe consegui ampliar cada vez mais meus conhecimentos
             descobri novas tecnologias que me encantaram logo de cara, no back end trabalho com
-            docker, sql, noSql node, express, mocha, chai, APIs OO, mongoDB e conceitos
+            docker, sql, noSql, node, express, mocha, chai, APIs OO, mongoDB e conceitos
             como POO E SOLID! <br />
             No meu tempo livre gosto de caminhar e fazer trilhas!
             Minha personalidade é INTJ-A
