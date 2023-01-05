@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AboutMe from "../components/AboutMe";
 import Contact from "../components/Contact";
 import ContactGadget from "../components/ContactGadget";
+import Feedbacks from "../components/Feedbacks";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import LandingHome from "../components/LandingHome";
@@ -34,6 +35,7 @@ export default function Home() {
           <Projects />
           <AboutMe />
           <WhatIDo />
+          <Feedbacks />
           <Contact />
           <Footer />
         </div>

@@ -16,6 +16,7 @@ const Header: FC<HeaderProps> = ({}) => {
             <a href="#projetos" className="hover:underline m-[14px]">Projetos</a>
             <a href="#sobreMim" className="hover:underline m-[14px]">Sobre Mim</a>
             <a href="#whatIDo" className="hover:underline m-[14px]">O que eu Faço?</a>
+            <a href="#feedbacks" className="hover:underline m-[14px]">Feedbacks</a>
             <a href="#contato" className="hover:underline m-[14px]">Contato</a>
           </div>
         </div>
