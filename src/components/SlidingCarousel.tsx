@@ -3,22 +3,37 @@ import { useEffect, useState } from 'react';
 
 interface SlidingCarouselProps {}
 
-const SlidingCarousel: FC<SlidingCarouselProps> = ({}) => {
-  const [mySkills, setMySkills] = useState<any>(null)
+const SlidingCarousel: FC<SlidingCarouselProps> = () => {
+  const [mySkills, setMySkills] = useState<any>(null);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   useEffect(() => {
-    fetch('/api/skills')
-    .then(resp => resp.json())
-    .then(setMySkills)
+    const fetchSkills = async () => {
+      const response = await fetch('/api/skills');
+      const data = await response.json();
+      setMySkills([...data, ...data, ...data, ...data, ...data]);
+    };
+
+    fetchSkills();
   }, []);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % mySkills.length);
+    }, 5000); // Ajuste o intervalo conforme necessário
+
+    return () => clearInterval(intervalId);
+  }, [mySkills]);
 
   return (
     <div className="overflow-hidden p-[40px] bg-black border-b-[0.5px] border-solid border-white">
-      <div className="sliding-background flex items-center gap-[40px]">
-        {!mySkills ? <p>loading</p> : (
-          mySkills.map((e: any) => (
-            <picture key={ e.name } className="h-[100px] w-[250px] flex flex-col justify-center items-center">
-              <img src={ e.image } height="20" width="90" alt={ e.name } />
+      <div className={`sliding-background ${mySkills && 'dynamic-width'}`}>
+        {!mySkills ? (
+          <p>loading</p>
+        ) : (
+          mySkills.map((e: any, index: number) => (
+            <picture key={ index } className={`image-container ${index === currentIndex ? 'visible' : ''}`}>
+              <img src={ e.image } width="90" alt={ e.name } />
               <p className="text-zinc-50 font-semibold tracking-wide">{ e.name }</p>
             </picture>
           ))
@@ -26,6 +41,6 @@ const SlidingCarousel: FC<SlidingCarouselProps> = ({}) => {
       </div>
     </div>
   );
-}
+};
 
 export default SlidingCarousel;

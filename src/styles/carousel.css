@@ -3,11 +3,28 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-900px * var(--num-images, 0)));
   }
 }
 
 .sliding-background {
-  animation: scroll 40s linear infinite;
-  width: calc(250px * 16);
+  display: flex;
+  align-items: center;
+  animation: scroll 380s linear infinite; /* Atualize o 380s para alterar a velocidade, quando menor o valor mais rápido fica */
+  width: 100%;
+}
+
+.dynamic-width {
+  --num-images: 26;  /* Atualize isso para o número real de imagens */
+  width: calc(900px * var(--num-images));
+}
+
+.image-container {
+  height: 100px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
 }

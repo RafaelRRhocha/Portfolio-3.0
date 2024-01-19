@@ -4,39 +4,44 @@ interface AboutMeProps {}
 
 const AboutMe: FC<AboutMeProps> = ({}) => {
   return (
-    <div id="sobreMim" className="w-full h-[1200px] md:h-[600px] lg:h-[600px] xl:h-[600px] bg-black flex flex-col justify-center items-center gap-4 text-zinc-100 border-b-[0.5px] border-solid border-white">
-      <h1 className="text-[45px] font-semibold tracking-wide">Sobre Mim</h1>
-      <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row gap-6 justify-center items-center text-zinc-100 p-5">
-        <div className="max-w-[500px] text-[18px] text-center md:text-left lg:text-left xl:text-left">
+    <div
+      id='sobreMim'
+      className='w-full h-[1200px] md:h-[600px] lg:h-[600px] xl:h-[600px] bg-black flex flex-col justify-center items-center gap-4 text-zinc-100 border-b-[0.5px] border-solid border-white'
+    >
+      <h1 className='text-[45px] font-semibold tracking-wide'>Sobre Mim</h1>
+      <div className='flex flex-col md:flex-row lg:flex-row xl:flex-row gap-6 justify-center items-center text-zinc-100 p-5'>
+        <div className='max-w-[500px] text-[18px] text-center md:text-left lg:text-left xl:text-left'>
           <p>
-            Olá! Me chamo Rafael e tenho 19 anos!
-            Sou desenvolvedor web, tenho mais experiência em ambientes
-            que trabalham com react, porém tenho conhecimento com outros frameworks SPA (angular/vue).
-            Tenho contato com programação desde os meus 16 anos onde tive o primeiro contato com C#,
-            depois disso fui estudando cada vez mais e fui me aperfeiçoando em conhecimento, tenho bastante
-            vontade de aprender coisas novas e uma grande facilidade de adaptação sempre disposto a aprender mais e mais
-            Tenho contato com diversas equipes de programadores todos os dias e cada dia tenho aperfeiçoado minhas softs skills, sendo as principais delas:
-            Comunicação,
-            Trabalho em Equipe,
-            Bom Relacionamento Interpessoal,
-            Compromisso com a Equipe,
-            Organização,
-            e Espirito de Equipe
+            Olá! Sou um desenvolvedor com pouco mais de 2 anos de
+            experiência, formado pela Trybe. Minha jornada educacional
+            proporcionou uma sólida base técnica, enquanto minha experiência
+            profissional me permitiu aprimorar minhas habilidades em diversas
+            linguagens, incluindo Ruby, TypeScript, Python, Ruby on Rails,
+            mySQL. <br />
+            Já deixei minha marca em projetos para gigantes da moda, como
+            Reserva, Malwee, Grupo Colméia, Grupo Soma, Vivara, NTK, Grupo
+            Laces, entre outros. Minha abordagem centrada em soluções eficientes
+            e inovadoras destaca meu compromisso com a excelência no
+            desenvolvimento.
           </p>
         </div>
-        <div className="max-w-[500px] text-[18px] text-center md:text-left lg:text-left xl:text-left">
+        <div className='max-w-[500px] text-[18px] text-center md:text-left lg:text-left xl:text-left'>
           <p>
-            A partir do momento que entrei na trybe consegui ampliar cada vez mais meus conhecimentos
-            descobri novas tecnologias que me encantaram logo de cara, no back end trabalho com
-            docker, sql, noSql, node, express, mocha, chai, APIs OO, mongoDB e conceitos
-            como POO E SOLID! <br />
-            No meu tempo livre gosto de caminhar e fazer trilhas!
-            Minha personalidade é INTJ-A
+            Quando não tô imerso no código, gosto de relaxar com caminhadas e
+            trilhas, curtindo a natureza. <br />
+            Minha personalidade? Sou do tipo INTJ-A, o que traduz minha
+            abordagem analítica e estratégica. Estou em busca de desafios que me
+            estimulem profissionalmente, onde eu possa aplicar minha bagagem e
+            contribuir para projetos de peso. <br />
+            Sempre de olho em oportunidades para crescer e me destacar no mundo
+            do desenvolvimento. Esse é um pouquinho sobre mim, sempre
+            estou pronto para encarar os próximos desafios com seriedade e
+            experiência.
           </p>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default AboutMe;

@@ -14,7 +14,13 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <meta name='description' content='Olá! Bem vindos ao meu Portfólio!' />
+        <meta property="og:title" content="Rafael Rocha Souza" />
+        <meta property="og:description" content="Olá! Bem vindos ao meu Portfólio!" />
+        <meta
+          property="og:image"
+          content="https://avatars.githubusercontent.com/u/99758843?v=4"
+        />
+
         <title>Rafael Rocha Souza</title>
       </Head>
 
