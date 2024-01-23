@@ -13,8 +13,6 @@ const Feedbacks: FC<FeedbacksProps> = ({}) => {
     .then(setFeedbacks)
   }, []);
 
-  console.log(feedbacks[indice])
-
   return (
     <div id="feedbacks" className="hidden w-full h-[1000px] md:h-[600px] lg:h-[600px] xl:h-[600px] bg-black md:flex lg:flex xl:flex flex-col items-center gap-10 text-zinc-100 border-b-[0.5px] border-solid border-white">
       <h1 className="text-[45px] font-semibold tracking-wide pt-[60px]">Feedbacks</h1>
