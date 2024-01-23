@@ -2,11 +2,11 @@ import { FC, useEffect, useState } from 'react';
 
 interface NotificationProps {
   message: string;
-  type: 'positive' | 'negative';
+  color: string;
   onClose: () => void;
 }
 
-const Notification: FC<NotificationProps> = ({ message, type, onClose }) => {
+const Notification: FC<NotificationProps> = ({ message, color, onClose }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       onClose();
@@ -17,11 +17,9 @@ const Notification: FC<NotificationProps> = ({ message, type, onClose }) => {
     };
   }, [onClose]);
 
-  const color = type === 'negative' ? 'red' : 'green';
-
   return (
     <div
-      className={`fixed bottom-0 left-0 mb-4 mr-4 p-4 bg-${color}-600 text-white rounded-md`}
+      className={`fixed bottom-0 left-5 mb-7 p-4 bg-${color}-600 text-white rounded-md z-50`}
     >
       {message}
     </div>

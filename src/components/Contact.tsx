@@ -12,9 +12,13 @@ const Contact: FC<ContactProps> = ({}) => {
     message: '',
   });
 
+  const [notificationInfos, setNotificationInfos] = useState({
+    show: false,
+    text: '',
+    color: '',
+  });
+
   const [emailError, setEmailError] = useState<string>('');
-  const [showNotificationSuccess, setShowNotificationSuccess] = useState(false);
-  const [showNotificationError, setShowNotificationError] = useState(false);
 
   const emailTimerRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -45,36 +49,40 @@ const Contact: FC<ContactProps> = ({}) => {
     }
   };
 
+  const handleNotification = (show: boolean, text: string, color: string) => {
+    setNotificationInfos({
+      show,
+      text,
+      color
+    });
+  };
+
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     try {
-      await emailjs.sendForm(
+      const form = await emailjs.sendForm(
         process.env.EMAIL_SERVICE_ID || '',
         process.env.EMAIL_TEMPLATE_ID || '',
         e.target,
         process.env.EMAIL_PUBLIC_KEY || ''
       );
 
-      setFormData({
-        email: '',
-        name: '',
-        message: '',
-      });
+      if(form.status === 200) {
+        handleNotification(true, 'Email enviado com sucesso!', 'green');
 
-      setShowNotificationSuccess(true);
+        setFormData({
+          email: '',
+          name: '',
+          message: '',
+        });
+      } else {
+        throw new Error(`An error ocurred => ${form}`)
+      }
     } catch (error) {
-      setShowNotificationError(true);
+      handleNotification(true, 'Ops, ocorreu um erro ao enviar o email! Por favor, tente novamente', 'red');
       console.error(error);
     }
-  };
-
-  const handleNotificationSuccessClose = () => {
-    setShowNotificationSuccess(false);
-  };
-
-  const handleNotificationErrorClose = () => {
-    setShowNotificationError(false);
   };
 
   return (
@@ -101,21 +109,11 @@ const Contact: FC<ContactProps> = ({}) => {
           </a>
         </div>
 
-        {showNotificationSuccess && (
           <Notification
-            message='Email enviado com sucesso!'
-            type="positive"
-            onClose={handleNotificationSuccessClose}
+            message={notificationInfos.text}
+            color={notificationInfos.color}
+            onClose={() => handleNotification(false, '', '')}
           />
-        )}
-
-        {showNotificationError && (
-          <Notification
-            message='Ops, ocorreu um erro ao enviar o email! Por favor, tente novamente'
-            type="negative"
-            onClose={handleNotificationErrorClose}
-          />
-        )}
 
         <form
           className='flex flex-col justify-center items-center gap-5'
@@ -127,6 +125,7 @@ const Contact: FC<ContactProps> = ({}) => {
             className='rounded-lg p-4 bg-[#d4d4d8] w-full max-w-xs text-black placeholder:text-black placeholder:opacity-[0.5]'
             placeholder='nome*'
             name='name'
+            autoComplete='off'
             value={formData.name}
             onChange={handleChange}
           />
@@ -135,7 +134,6 @@ const Contact: FC<ContactProps> = ({}) => {
             className='rounded-lg p-4 bg-[#d4d4d8] w-full max-w-xs text-black placeholder:text-black placeholder:opacity-[0.5]'
             placeholder='email*'
             name='email'
-            autoComplete='off'
             value={formData.email}
             onChange={handleChange}
           />
