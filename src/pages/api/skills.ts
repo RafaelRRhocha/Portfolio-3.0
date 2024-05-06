@@ -17,10 +17,16 @@ export default function myskills(req: NextApiRequest, res: NextApiResponse) {
       ref: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS',
     },
     {
+      name: 'jQuery',
+      image:
+        'https://www.vectorlogo.zone/logos/jquery/jquery-icon.svg',
+      ref: 'https://jquery.com',
+    },
+    {
       name: 'TypeScript',
       image:
         'https://user-images.githubusercontent.com/99758843/178770630-a6f6c0bc-a718-4cde-b794-46735acd9af7.svg',
-      ref: 'https://www.typescriptlang.org/',
+      ref: 'https://www.typescriptlang.org',
     },
     {
       name: 'Vue.js',
@@ -75,12 +81,6 @@ export default function myskills(req: NextApiRequest, res: NextApiResponse) {
       image:
         'https://github.com/URafaelRocha/URafaelRocha/assets/123375924/46f2e9c0-2a2b-42fb-a5f5-8075e746e42a',
       ref: 'https://expressjs.com/pt-br/',
-    },
-    {
-      name: 'Nest.js',
-      image:
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg',
-      ref: 'https://nestjs.com',
     },
     {
       name: 'Sails.js',
