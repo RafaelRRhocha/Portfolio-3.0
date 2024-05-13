@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { List, Planet } from 'phosphor-react';
+import { List, Planet, X } from 'phosphor-react';
 import { FC, useRef, useState } from 'react';
 
 interface MenuHamburgerProps {}
@@ -36,6 +36,13 @@ const MenuHamburger: FC<MenuHamburgerProps> = ({}) => {
             aria-label="Sidebar"
             onClick={toggleSidebar}
           >
+            <button
+              className='absolute top-3 right-3 p-2 focus:outline-none text-white rounded-full'
+              aria-label='Close sidebar'
+            >
+              <X size={30} />
+            </button>
+
             <a href="#projetos" className="underline m-[14px]">Projetos</a>
             <a href="#sobreMim" className="underline m-[14px]">Sobre Mim</a>
             <a href="#contato" className="underline m-[14px]">Contato</a>
